@@ -1,0 +1,155 @@
+/* To tell the truth i would have prefered using SASS */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato';
+}
+
+:root {
+    --darkPrimaryColor: #17E205;
+    --primaryColor: #90ff00;
+    --primaryAccent: #bcff66;
+    --primaryLight: #d3ff99;
+    --specialBlack: #141414;
+    --specialWhite: #fefdfd;
+    --grey: #dfdddd;
+    --darkGrey: #808080;
+}
+
+body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    height: 80px;
+    width: 100%;
+    background-color: var(--specialWhite);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar_logo {
+    cursor: pointer;
+}
+
+.navbar_links {
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.navbar_links_active {
+    font-weight: bolder;
+}
+
+.navbar_links a {
+    color: var(--specialBlack);
+    inset: 10px;
+}
+
+.navbar_links a:hover {
+    text-decoration: none;
+    color: var(--darkPrimaryColor);
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.navbar_buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar_buttons_login {
+    color: var(--darkPrimaryColor);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.navbar_buttons_signup {
+    background-color: var(--darkPrimaryColor);
+    color: var(--specialWhite);
+    padding: 10px 40px;
+    border-radius: 12px;
+}
+
+.home {
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-color: var(--primaryLight);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 90px;
+}
+
+.home_writeup {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.home_writeup_header1 {
+    font-size: 48px;
+    color: var(--specialBlack);
+    font-weight: 800;
+    line-height: initial;
+}
+
+.home_writeup_header2 {
+    font-weight: 500;
+    color: var(--specialBlack);
+    font-size: 14px;
+}
+
+.home_writeup_button {
+    background-color: var(--darkPrimaryColor);
+    border-radius: 12px;
+    padding: 10px 50px;
+    font-size: 14px;
+    color: var(--specialWhite);
+}
+
+.features {
+    width: 100%;
+    height: 70vh;
+    background-color: var(--specialWhite);
+    padding: 30px;
+}
+
+.features_section {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.features_section-1 {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.features_section-2 {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.features_section-2 .section_card {
+    height: 100%;
+    width: 100%;
+    background-color: pink;
+}
