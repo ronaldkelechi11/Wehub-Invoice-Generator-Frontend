@@ -1,4 +1,4 @@
-* You Need NodeJS to collaborate.
+# You Need NodeJS to run the application.
 
 - clone the project
 - Run ``npm install`` or  ``yarn`` to install the dependencies
