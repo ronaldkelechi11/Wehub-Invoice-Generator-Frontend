@@ -1,5 +1,6 @@
 /* To tell the truth i would have prefered using SASS */
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap');
+@import url("/fonts/Lato-Regular.ttf");
 
 * {
     margin: 0;
@@ -80,4 +81,47 @@ body {
     border-radius: 12px;
 }
 
+.home {
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-color: var(--primaryLight);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 90px;
+}
 
+.home_writeup {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.home_writeup_header1 {
+    font-size: 48px;
+    color: var(--specialBlack);
+    font-weight: 800;
+    line-height: initial;
+}
+
+.home_writeup_header2 {
+    font-weight: 500;
+    color: var(--specialBlack);
+    font-size: 14px;
+}
+
+.home_writeup_button {
+    background-color: var(--darkPrimaryColor);
+    border-radius: 12px;
+    padding: 10px 50px;
+    font-size: 14px;
+    color: var(--specialWhite);
+}
+
+.features {
+    width: 100%;
+    height: 70vh;
+    background-color: var(--specialWhite);
+    padding: 10px;
+}
