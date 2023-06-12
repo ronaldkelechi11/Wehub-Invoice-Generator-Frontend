@@ -1,6 +1,83 @@
 /* To tell the truth i would have prefered using SASS */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap');
 
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Lato';
 }
+
+:root {
+    --darkPrimaryColor: #17E205;
+    --primaryColor: #90ff00;
+    --primaryAccent: #bcff66;
+    --primaryLight: #d3ff99;
+    --specialBlack: #141414;
+    --specialWhite: #fefdfd;
+    --grey: #dfdddd;
+    --darkGrey: #808080;
+}
+
+body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    height: 80px;
+    width: 100%;
+    background-color: var(--specialWhite);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar_logo {
+    cursor: pointer;
+}
+
+.navbar_links {
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.navbar_links_active {
+    font-weight: bolder;
+}
+
+.navbar_links a {
+    color: var(--specialBlack);
+    inset: 10px;
+}
+
+.navbar_links a:hover {
+    text-decoration: none;
+    color: var(--darkPrimaryColor);
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.navbar_buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar_buttons_login {
+    color: var(--darkPrimaryColor);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.navbar_buttons_signup {
+    background-color: var(--darkPrimaryColor);
+    color: var(--specialWhite);
+    padding: 10px 20px;
+    border-radius: 12px;
+}
+
+
