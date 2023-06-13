@@ -8,24 +8,29 @@
     <title>Wehub Invoice Generator</title>
 
     <!-- Linking Section -->
-    <link rel="stylesheet" href="./Styling/index.css">
-    <script defer src="./Scripts/index.js"></script>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/index.scss">
+    <script defer src="./js/index.js"></script>
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+
+    <!-- Created a Lato font entry to our project -->
+    <link rel="stylesheet" href="./fonts/Lato/fonts.css">
 
     <!-- Bootstrap link -->
+    <!-- ****** READ THIS ****** When the folder is not in the public folder, you on go back just access the name direct... Notice don't write '/public' -->
     <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
     <script src="./Bootstrap/js/popper.min.js"></script>
     <script src="./Bootstrap/js/bootstrap.min.js"></script>
 </head>
 
 <body>
+    <!-- Navbar Section -->
     <div class="navbar">
         <div class="navbar_logo">LOGO IMAGE</div>
         <div class="navbar_links">
             <a href="#home" class="navbar_links_active">Home</a>
             <a href="#">Pricing</a>
-            <a href="#">Contact Us</a>
-            <a href="#">Features</a>
+            <a href="#footer">Contact Us</a>
+            <a href="#features">Features</a>
         </div>
         <div class="navbar_buttons">
             <div class="navbar_buttons_login">Login</div>
@@ -33,6 +38,7 @@
         </div>
     </div>
 
+    <!-- Home Section -->
     <div class="home" id="home">
         <div class="home_writeup">
             <div class="home_writeup_header1">Automatic <br> Invoice Generator <br> For Your Client <br> and Business
@@ -42,16 +48,62 @@
             <div class="home_writeup_button">Generate Invoice</div>
         </div>
     </div>
-    <div class="features">
+
+    <!-- Features Section -->
+    <div class="features" id="features">
         <div class="features_section">
-            <div class="features_section-1"></div>
+            <div class="features_section-1">
+                <div class="header1">Our Features</div>
+                <div class="description">Wehub Invoice Generator helps you get paid on time. We <br> provide multiple
+                    payment
+                    options that your customers <br> can choose from to make their payment securely.</div>
+                <div class="header2">Payment Modes</div>
+            </div>
             <div class="features_section-2">
-                <div class="section_card"></div>
-                <div class="section_card"></div>
-                <div class="section_card"></div>
-                <div class="section_card"></div>
+                <div class="section_card">
+                    <img src="/svg's/message.svg" alt="">
+                    <h3>Send Invoice via via sms, email or client portal.</h3>
+                </div>
+                <div class="section_card">
+                    <img src="/svg's/chart-21.svg" alt="">
+                    <h3>Keep track of customers Invoice status.</h3>
+                </div>
+                <div class="section_card">
+                    <img src="/svg's/notification.svg" alt="">
+                    <h3>Send Invoice via via sms, email or client portal.</h3>
+                </div>
+                <div class="section_card">
+                    <img src="/svg's/message.svg" alt="">
+                    <h3>Send Invoice via via sms, email or client portal.</h3>
+                </div>
             </div>
         </div>
+    </div>
+
+    <!-- Advert -->
+    <div class="advert">
+        <div class="advert_section">
+            <div class="advert_section_1">
+                <div class="advert_section_1_header_1">PAYMENT</div>
+                <div class="advert_section_1_header_2">Generate your Invoices now for free <br>Recieving payments have
+                    never been more easier </div>
+                <div class="advert_section_1_button">Generate Invoice</div>
+            </div>
+            <div class="advert_section_2"></div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="testimonials">
+        <div class="testimonials_header">WHAT OUR CLIENTS SAY</div>
+        <i class="bi bi-slack"></i>
+    </div>
+
+
+    <!-- Footer Section -->
+    <div class="footer" id="footer">
+        <div class="footer_top"></div>
+        <div class="footer_bottom"></div>
     </div>
 </body>
 

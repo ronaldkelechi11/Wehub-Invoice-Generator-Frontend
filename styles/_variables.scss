@@ -1,0 +1,15 @@
+// For modularization all colors will be saved here
+$darkPrimaryColor: #17E205;
+$primaryColor: #90ff00;
+$primaryAccent: #bcff66;
+$primaryLight: #d3ff99;
+$specialBlack: #141414;
+$specialWhite: #fefdfd;
+$grey: #dfdddd;
+$darkGrey: #808080;
+
+//BASIC ANIMATIONS
+@mixin scaleHoverAnimation {
+    transform: scale(1.2);
+    transition: 0.8s ease-in-out;
+}
