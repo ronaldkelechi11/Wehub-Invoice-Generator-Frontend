@@ -119,6 +119,7 @@ body {
     height: 70vh;
     background-color: $specialWhite;
     padding: 30px;
+    backdrop-filter: blur(10px);
 }
 
 .features_section {
@@ -183,8 +184,49 @@ body {
 
 
 .advert {
-    height: 50vh;
+    height: 70vh;
     background-color: $primaryLight;
+    padding: 30px;
+
+}
+
+.advert_section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.advert_section_1 {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 30px;
+
+    &_header_1 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    &_header_2 {
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    &_button {
+        width: fit-content;
+        cursor: pointer;
+        background-color: $darkPrimaryColor;
+        border-radius: 12px;
+        padding: 10px 50px;
+        font-size: 14px;
+        color: $specialWhite;
+
+        &:hover {
+            @include scaleHoverAnimation;
+        }
+    }
 }
 
 .testimonials {
@@ -204,4 +246,16 @@ body {
 .footer {
     height: 70vh;
     background-color: $specialBlack;
+    display: flex;
+    flex-direction: column;
+
+    &_top {
+        height: 85%;
+        padding: 30px;
+    }
+
+    &_bottom {
+        height: 15%;
+        padding: 30px;
+    }
 }
