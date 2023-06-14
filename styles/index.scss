@@ -67,7 +67,7 @@ body {
 .navbar_buttons_signup {
     background-color: $darkPrimaryColor;
     color: $specialWhite;
-    padding: 10px 40px;
+    padding: 10px $padding;
     border-radius: 12px;
 }
 
@@ -106,11 +106,7 @@ body {
 
 .home_writeup_button {
     cursor: pointer;
-    background-color: $darkPrimaryColor;
-    border-radius: 12px;
-    padding: 10px 50px;
-    font-size: 14px;
-    color: $specialWhite;
+    @include normal_button;
 
     &:hover {
         @include scaleHoverAnimation;
@@ -121,7 +117,7 @@ body {
     width: 100%;
     height: 70vh;
     background-color: $specialWhite;
-    padding: 30px;
+    padding: $padding;
     backdrop-filter: blur(10px);
 }
 
@@ -136,10 +132,10 @@ body {
 .features_section-1 {
     width: 100%;
     height: 100%;
-    padding: 30px;
+    padding: $padding;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: $padding;
 }
 
 .features_section-1 .header1 {
@@ -175,8 +171,8 @@ body {
 }
 
 .features_section-2 .section_card img {
-    width: 40px;
-    height: 40px;
+    width: $padding;
+    height: $padding;
 }
 
 .features_section-2 .section_card h3 {
@@ -190,7 +186,7 @@ body {
 .advert {
     height: 70vh;
     background-color: $primaryLight;
-    padding: 30px;
+    padding: $padding;
     background: url("/images/advert_background.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -210,7 +206,7 @@ body {
     width: 50%;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 30px;
+    padding: $padding;
 
     &_header_1 {
         font-size: 18px;
@@ -247,7 +243,7 @@ body {
 
 .testimonials {
     height: 100vh;
-    padding: 30px;
+    padding: $padding;
     background-color: $specialWhite;
 }
 
@@ -264,14 +260,75 @@ body {
     background-color: $specialBlack;
     display: flex;
     flex-direction: column;
+    padding: $padding;
 
     &_top {
-        height: 85%;
-        padding: 30px;
+        height: 90%;
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 10px;
+
+        &_grid {
+            width: 60%;
+            display: grid;
+            padding: 10px;
+            gap: 10px;
+            grid-template-columns: repeat(2, 1fr);
+
+            &_card {
+                @include flex-column;
+                width: 100%;
+                height: 100%;
+                justify-content: flex-end;
+                color: $specialWhite;
+
+                h4 {
+                    font-size: 14px;
+                }
+
+                h5 {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        &_col {
+            width: 40%;
+            @include flex-column;
+            justify-content: space-evenly;
+            padding: 10px;
+
+            h1 {
+                color: $specialWhite;
+                font-size: 32px;
+            }
+
+            &_button {
+                cursor: pointer;
+                padding-top: 20px !important;
+                padding-bottom: 20px !important;
+                @include normal_button;
+                text-align: center;
+
+                &:hover {
+                    @include scaleHoverAnimation;
+                    transition: 1s !important;
+                    transform: scale(1.1);
+                }
+            }
+        }
     }
 
     &_bottom {
-        height: 15%;
-        padding: 30px;
+        height: 10%;
+        border-top: 1px solid $specialWhite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .orgName {
+            color: $specialWhite;
+            font-size: 16px;
+        }
     }
 }

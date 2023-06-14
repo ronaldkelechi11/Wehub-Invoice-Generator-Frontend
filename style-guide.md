@@ -5,6 +5,7 @@
 The designs were created to the following widths:
 
 - Mobile: 420px 
+- Tabler: (*STILL IN QUESTION*)
 - Desktop: 1366px
 
 ## Colors
